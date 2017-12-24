@@ -18,11 +18,33 @@
 <resources>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <item name="colorPrimary">@color/theme_primary</item>
     </style>
 
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.Bacon.Card"/>
+
+    <style name="Theme.Bacon.Card.Text">
+        <item name="android:textColor">@color/card_text</item>
+        <item name="android:paddingStart">@dimen/card_item_text_padding_start</item>
+        <item name="android:paddingEnd">@dimen/card_item_text_padding_end</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="Theme.Bacon.Card.Text.Primary" parent="Theme.Bacon.Card.Text">
+        <item name="android:paddingTop">@dimen/card_item_primary_text_padding_top</item>
+        <item name="android:paddingBottom">@dimen/card_item_primary_text_padding_bottom</item>
+        <item name="android:textSize">@dimen/card_item_primary_text_size</item>
+    </style>
+
+    <style name="Theme.Bacon.Card.TextSecondary" parent="Theme.Bacon.Card.Text">
+        <item name="android:paddingBottom">@dimen/card_item_secondary_text_padding_bottom</item>
+        <item name="android:textSize">@dimen/card_item_secondary_text_size</item>
+        <item name="android:fontFamily">"sans-serif-thin"</item>
     </style>
 
 </resources>

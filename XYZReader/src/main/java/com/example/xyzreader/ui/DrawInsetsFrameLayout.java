@@ -96,10 +96,6 @@ public class DrawInsetsFrameLayout extends FrameLayout {
         }
     }
 
-    public void setOnInsetsCallback(OnInsetsCallback onInsetsCallback) {
-        mOnInsetsCallback = onInsetsCallback;
-    }
-
     @Override
     public WindowInsets onApplyWindowInsets(WindowInsets insets) {
         insets = super.onApplyWindowInsets(insets);
