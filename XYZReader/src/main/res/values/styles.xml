@@ -74,7 +74,6 @@
 
     <style name="Theme.Bacon.Fab">
         <item name="android:tintMode">screen</item>
-        <item name="android:elevation">@dimen/fab_elevation</item>
         <item name="android:src">@drawable/ic_share</item>
     </style>
 </resources>
