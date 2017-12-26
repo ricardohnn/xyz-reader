@@ -4,8 +4,6 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingStart="@dimen/details_padding"
-    android:paddingEnd="@dimen/details_padding"
     android:background="@color/theme_background"
     android:fitsSystemWindows="true">
 
@@ -37,7 +35,6 @@
     <android.support.v4.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/white"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
         <LinearLayout
             android:layout_width="match_parent"
@@ -55,11 +52,13 @@
                 <TextView
                     android:id="@+id/article_title"
                     android:theme="@style/Theme.Bacon.TextView.DetailBar.Title"
+                    android:textColor="?android:textColorSecondary"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"/>
 
                 <TextView
                     android:id="@+id/article_byline"
+                    android:textColor="?android:textColorTertiary"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:theme="@style/Theme.Bacon.TextView.DetailBar.Small" />
@@ -67,6 +66,7 @@
             </LinearLayout>
             <com.uncopt.android.widget.text.justify.JustifiedTextView
                 android:id="@+id/article_body"
+                android:textColor="?android:textColorPrimary"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:theme="@style/Theme.Bacon.TextView.Body"
